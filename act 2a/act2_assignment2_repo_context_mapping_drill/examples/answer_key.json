@@ -1,0 +1,17 @@
+{
+  "key_lesson": "Before Claude Code edits the repo, architects must decide what context the repo must provide.",
+  "must_include": [
+    "WebCheckoutController",
+    "MobileCheckoutController",
+    "InvoiceCheckoutJob",
+    "CouponPolicy",
+    "EnterpriseCustomerPolicy",
+    "PricingService",
+    "API contract",
+    "Existing tests",
+    "Logging policy",
+    "Feature flags / rollback",
+    "CODEOWNERS",
+    "CLAUDE.md"
+  ]
+}

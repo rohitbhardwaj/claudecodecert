@@ -1,0 +1,14 @@
+{
+  "expected_decision": "Block / should not have been approved",
+  "correct_fix_location": "src/domain/CouponPolicy.java",
+  "reason": "Coupon expiration is a shared business rule used by web, mobile, and batch checkout.",
+  "bugs": [
+    "Wrong layer: WebCheckoutController patched",
+    "Root cause missed: CouponPolicy still accepts expired coupons",
+    "Inconsistent behavior: mobile and batch still broken",
+    "Architecture drift: business logic moved into controller",
+    "Tests too narrow: only web controller test added",
+    "Context too narrow: not all entry points inspected",
+    "Review gap: no repo map or blast-radius review"
+  ]
+}

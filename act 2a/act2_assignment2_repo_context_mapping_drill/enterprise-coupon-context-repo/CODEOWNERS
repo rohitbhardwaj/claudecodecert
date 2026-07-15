@@ -1,0 +1,10 @@
+/src/controller/**                     @checkout-team
+/src/batch/**                          @billing-team
+/src/domain/CouponPolicy.java          @checkout-architecture
+/src/domain/EnterpriseCustomerPolicy.java @customer-platform
+/src/pricing/**                        @pricing-team @finance-owner
+/api/**                                @api-owner
+/docs/security/**                      @security-team
+/docs/runbooks/**                      @platform-team @sre-team
+/src/tests/**                          @qa-team
+/CLAUDE.md                             @architecture-team

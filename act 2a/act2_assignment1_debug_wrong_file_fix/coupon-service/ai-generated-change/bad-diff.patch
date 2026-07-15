@@ -1,0 +1,16 @@
+diff --git a/src/controller/WebCheckoutController.java b/src/controller/WebCheckoutController.java
+@@
+ public boolean checkout(Object coupon, LocalDate today) {
++    // AI-generated patch:
++    // Adds expiration validation at the web entry point.
++    // BUG: this only protects web checkout and duplicates domain logic.
++    if (coupon instanceof Coupon && ((Coupon) coupon).getExpiresOn().isBefore(today)) {
++        return false;
++    }
+     return checkoutService.checkoutWithCoupon(coupon, today);
+ }
+
+diff --git a/src/tests/WebCheckoutControllerTest.java b/src/tests/WebCheckoutControllerTest.java
+@@
++// Added web-only expired coupon test.
++// Missing: mobile test, batch test, CouponPolicy test.
