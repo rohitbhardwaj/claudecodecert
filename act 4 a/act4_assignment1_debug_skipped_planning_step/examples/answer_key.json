@@ -1,0 +1,25 @@
+{
+  "expected_decision": "Block / should not have been approved",
+  "key_lesson": "A governed Claude Code workflow starts with a plan, not a diff.",
+  "bugs": [
+    "Claude edited before producing a plan",
+    "Too many files changed in one PR",
+    "Mobile, refund, pricing, and API contract impact not analyzed first",
+    "API, pricing, and architecture owners not consulted",
+    "Failing pricing test rewritten instead of fixed",
+    "Coupon stacking applies discounts twice",
+    "No rollback or feature flag",
+    "PR lacks blast-radius explanation"
+  ],
+  "correct_workflow": [
+    "Analyze before editing",
+    "Identify affected entry points and shared policies",
+    "Propose smallest safe implementation plan",
+    "Identify tests to add before code changes",
+    "Identify approval owners",
+    "Wait for approval",
+    "Implement in small PRs",
+    "Preserve and strengthen tests",
+    "Include rollback plan"
+  ]
+}

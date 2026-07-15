@@ -1,0 +1,50 @@
+{
+  "key_lesson": "Approval is not a meeting. It is evidence that the right risks were understood before code changed.",
+  "approval_areas": [
+    {
+      "area": "Business behavior",
+      "evidence": "Current vs proposed refund rules",
+      "owner": "Product / architecture"
+    },
+    {
+      "area": "Money/refund logic",
+      "evidence": "Refund calculation and edge cases",
+      "owner": "Finance / payments"
+    },
+    {
+      "area": "Payment gateway impact",
+      "evidence": "Capture/refund API behavior",
+      "owner": "Payments owner"
+    },
+    {
+      "area": "API contract",
+      "evidence": "Response/error-code changes",
+      "owner": "API owner"
+    },
+    {
+      "area": "Data model / repository",
+      "evidence": "Data fields and migration impact",
+      "owner": "Data owner"
+    },
+    {
+      "area": "Logging/security",
+      "evidence": "Reason codes, no PII",
+      "owner": "Security / SRE"
+    },
+    {
+      "area": "Tests",
+      "evidence": "Happy, failure, edge, gateway timeout",
+      "owner": "QA / architecture"
+    },
+    {
+      "area": "Rollback",
+      "evidence": "Feature flag/revert/disable path",
+      "owner": "SRE / platform"
+    },
+    {
+      "area": "PR slicing",
+      "evidence": "Small PR sequence",
+      "owner": "Architecture / tech lead"
+    }
+  ]
+}

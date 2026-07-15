@@ -1,0 +1,20 @@
+openapi: 3.0.0
+info:
+  title: Checkout API
+  version: 1.0.0
+
+components:
+  schemas:
+    CheckoutResponse:
+      type: object
+      properties:
+        totalCents:
+          type: integer
+        appliedCoupons:
+          type: array
+          items:
+            type: string
+        stackingApplied:
+          type: boolean
+
+# API changes require API owner approval.

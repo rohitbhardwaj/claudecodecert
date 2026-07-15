@@ -1,0 +1,7 @@
+/src/domain/**             @architecture-team
+/src/pricing/**            @pricing-team @finance-owner
+/src/service/RefundService.java @finance-owner @architecture-team
+/api/**                    @api-owner
+/src/tests/**              @qa-team
+/docs/runbooks/**          @sre-team @platform-team
+/CLAUDE.md                 @architecture-team

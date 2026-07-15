@@ -1,0 +1,26 @@
+openapi: 3.0.0
+info:
+  title: Checkout Cancellation API
+  version: 1.0.0
+
+components:
+  schemas:
+    CancellationResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        refundAmountCents:
+          type: integer
+        refundStatus:
+          type: string
+          enum:
+            - NOT_STARTED
+            - APPROVED
+            - DECLINED
+            - PENDING_GATEWAY_RETRY
+            - DUPLICATE_REQUEST
+        reasonCode:
+          type: string
+
+# Any response or error-code changes require API owner approval.

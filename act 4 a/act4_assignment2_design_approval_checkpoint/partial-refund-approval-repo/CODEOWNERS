@@ -1,0 +1,10 @@
+/src/service/CancellationService.java     @checkout-team @architecture-team
+/src/domain/RefundPolicy.java             @finance-owner @payments-team @architecture-team
+/src/payment/**                           @payments-team
+/src/data/**                              @data-owner
+/api/**                                   @api-owner
+/src/logging/**                           @security-team @sre-team
+/docs/security/**                         @security-team
+/docs/runbooks/**                         @sre-team @platform-team
+/src/tests/**                             @qa-team @architecture-team
+/CLAUDE.md                                @architecture-team
