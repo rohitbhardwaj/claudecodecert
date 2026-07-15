@@ -1,0 +1,9 @@
+# Current CODEOWNERS has gaps.
+/src/controller/**     @checkout-team
+/src/service/**        @checkout-team
+/src/logging/**        @security-team
+
+# Missing expected owners:
+# /src/domain/**       @architecture-team
+# /src/domain/RefundPolicy.java @finance-owner @architecture-team
+# /src/tests/**        @qa-team

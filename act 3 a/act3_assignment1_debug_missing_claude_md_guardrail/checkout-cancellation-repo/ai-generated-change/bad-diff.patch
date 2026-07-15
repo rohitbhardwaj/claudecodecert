@@ -1,0 +1,23 @@
+diff --git a/src/controller/CheckoutController.java b/src/controller/CheckoutController.java
+@@
+ public class CheckoutController {
+@@
++    public String cancelOrder(String orderId, String status) {
++        // AI-generated implementation:
++        // BUG: cancellation business logic placed in controller.
++        if ("SHIPPED".equals(status)) {
++            return "CANNOT_CANCEL";
++        }
++
++        // BUG: refund logic duplicated instead of using RefundPolicy.
++        int refundCents = 1000;
++
++        // BUG: reason code differs from domain/service convention.
++        return "WEB_CANCELLED_REFUND_" + refundCents;
++    }
+ }
+
+diff --git a/src/tests/CheckoutControllerTest.java b/src/tests/CheckoutControllerTest.java
+@@
++// Added web happy-path cancellation test only.
++// Missing: mobile, batch, domain policy, refund policy, reason-code tests.

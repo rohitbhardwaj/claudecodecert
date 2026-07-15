@@ -1,0 +1,45 @@
+{
+  "key_lesson": "Good Claude Code governance converts tribal architecture knowledge into repo-readable rules.",
+  "rules": [
+    {
+      "messy_pattern": "Business logic in controller",
+      "rule": "Controllers must be transport-only",
+      "where": "CLAUDE.md, architecture docs"
+    },
+    {
+      "messy_pattern": "Refund logic duplicated",
+      "rule": "Refund rules belong in RefundPolicy",
+      "where": "CLAUDE.md, domain docs"
+    },
+    {
+      "messy_pattern": "Inconsistent reason codes",
+      "rule": "Use approved reason-code enum",
+      "where": "CLAUDE.md, API docs"
+    },
+    {
+      "messy_pattern": "Happy-path-only tests",
+      "rule": "Add happy, failure, and edge-case tests",
+      "where": "CLAUDE.md, PR template"
+    },
+    {
+      "messy_pattern": "PII-like logging",
+      "rule": "Log correlation ID and reason code only",
+      "where": "security policy, CI scan"
+    },
+    {
+      "messy_pattern": "Missing domain CODEOWNERS",
+      "rule": "Domain policy changes need architecture approval",
+      "where": "CODEOWNERS"
+    },
+    {
+      "messy_pattern": "Direct data access from service",
+      "rule": "Use repository abstraction",
+      "where": "architecture docs"
+    },
+    {
+      "messy_pattern": "Unclear rollback rules",
+      "rule": "Production behavior changes need rollback plan",
+      "where": "PR template, runbook"
+    }
+  ]
+}

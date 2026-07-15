@@ -1,0 +1,7 @@
+/src/controller/**                 @checkout-team
+/src/batch/**                      @billing-team
+/src/service/CancellationService.java @checkout-architecture
+/src/domain/OrderCancellationPolicy.java @checkout-architecture
+/src/domain/RefundPolicy.java      @finance-owner @checkout-architecture
+/src/tests/**                      @qa-team
+/CLAUDE.md                         @architecture-team

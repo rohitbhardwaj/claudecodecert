@@ -1,0 +1,24 @@
+{
+  "expected_decision": "Block / should not have been approved",
+  "key_lesson": "When repo guidance is missing, Claude learns from the code it sees \u2014 even when the code is architecturally wrong.",
+  "bugs": [
+    "Weak CLAUDE.md did not explain architecture boundaries",
+    "Cancellation business logic added to controller",
+    "OrderCancellationPolicy bypassed",
+    "Refund logic duplicated instead of RefundPolicy",
+    "Web, mobile, and batch behavior diverge",
+    "Reason codes are inconsistent",
+    "CODEOWNERS not checked",
+    "Only web happy-path test added"
+  ],
+  "required_claude_md_rules": [
+    "Controllers are transport-only",
+    "Cancellation rules belong in OrderCancellationPolicy",
+    "Refund calculations belong in RefundPolicy",
+    "All checkout entry points must be inspected",
+    "Reason codes must be consistent",
+    "CODEOWNERS must be checked before behavior changes",
+    "Tests must cover web, mobile, batch, domain policy, and refund behavior",
+    "Claude must return a plan before editing"
+  ]
+}
