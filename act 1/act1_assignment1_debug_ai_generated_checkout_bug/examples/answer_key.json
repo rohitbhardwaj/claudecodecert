@@ -1,0 +1,33 @@
+{
+  "expected_decision": "Block / should not have been approved",
+  "bugs": [
+    {
+      "area": "Coupon validation",
+      "problem": "Expired coupons accepted because expiration check removed"
+    },
+    {
+      "area": "Enterprise customer logic",
+      "problem": "Signed agreement check inverted and suspended status ignored"
+    },
+    {
+      "area": "Payment mapping",
+      "problem": "PAYMENT_DECLINED and PAYMENT_TIMEOUT collapsed to CHECKOUT_FAILED"
+    },
+    {
+      "area": "Observability",
+      "problem": "reasonCode removed from logs"
+    },
+    {
+      "area": "Tests",
+      "problem": "failure-path tests removed and happy-path adjusted to broken logic"
+    },
+    {
+      "area": "Prompt",
+      "problem": "Fix any tests that fail encouraged unsafe test changes"
+    },
+    {
+      "area": "Review",
+      "problem": "No blast-radius review, owner approval, or rollback"
+    }
+  ]
+}

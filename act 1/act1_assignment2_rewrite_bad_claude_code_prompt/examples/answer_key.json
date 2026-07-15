@@ -1,0 +1,14 @@
+{
+  "key_lesson": "Good Claude Code usage starts with a constrained analysis prompt, not an implementation command.",
+  "required_prompt_elements": [
+    "Do not modify files yet",
+    "Analyze checkout validation without changing production behavior",
+    "Inspect CLAUDE.md and relevant source/test/API/incident files",
+    "Preserve coupon, enterprise, payment error-code, logging, and test behavior",
+    "Identify failure-path tests",
+    "Identify risky simplification areas",
+    "Identify approval owners",
+    "Define rollback considerations",
+    "Wait for approval before editing"
+  ]
+}
